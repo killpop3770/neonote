@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="624.0" style="-fx-background-color: BLACK; -fx-border-image-width: 1; -fx-border-color: #3fcf3a;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+
+    <TableView fx:id="tableNotes" layoutX="21.0" layoutY="81.0" prefHeight="280.0" prefWidth="298.0" style="-fx-background-color: grey; -fx-border-style: solid; -fx-border-color: #3fcf1a; -fx-border-width: 3;">
+      <columns>
+
+        <TableColumn fx:id="idColumn" prefWidth="43.0" text="id" />
+        <TableColumn fx:id="noteColumn" prefWidth="146.0" text="note" />
+        <TableColumn fx:id="dateColumn" prefWidth="91.0" text="date" />
+        
+      </columns>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Bloom threshold="0.95" />
+         </effect>
+    </TableView>
+    <Label layoutX="215.0" layoutY="22.0" text="Neo_Note" textFill="#3fcf3a">
+      <font>
+        <Font name="Verdana" size="33.0" />
+      </font>
+         <effect>
+            <Bloom />
+         </effect>
+    </Label>
+      <Button fx:id="newNoteButton" layoutX="416.0" layoutY="316.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="116.0" style="-fx-background-color: grey; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #3fcf3a; -fx-border-radius: 4;" text="New_Note" textFill="#3fcf2a">
+         <font>
+            <Font name="Verdana" size="17.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textArea" layoutX="346.0" layoutY="128.0" prefHeight="157.0" prefWidth="251.0" style="-fx-border-style: solid; -fx-border-width: 5; -fx-border-color: #3fcf2a;">
+         <effect>
+            <Bloom threshold="0.95" />
+         </effect></TextArea>
+      <TextField fx:id="timeArea" layoutX="407.0" layoutY="81.0" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: grey;" />
+  </children>
+   <effect>
+      <Glow level="0.2" />
+   </effect>
+</AnchorPane>
